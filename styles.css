@@ -29,8 +29,8 @@
     --color-background: #F5F5FF;
     --color-text: #1a1a1a;
     --color-text-light: #666666;
-    --color-link: #E85D24;
-    --color-link-hover: #C94D1A;
+    --color-link: #9200ED;
+    --color-link-hover: #7400BE;
 
     /* Project card colors */
     --color-pink: #F8D7E8;
@@ -140,13 +140,13 @@ p {
 }
 
 .link-purple {
-    color: #9D00FF;
+    color: #9200ED;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .link-purple:hover {
-    color: #7A00CC;
+    color: #7400BE;
     text-decoration: underline;
 }
 
@@ -322,6 +322,14 @@ p {
 .project-image.purple { background-color: var(--color-purple); }
 .project-image.mint { background-color: var(--color-mint); }
 .project-image.peach { background-color: var(--color-peach); }
+.project-image.light-blue { background-color: #D0E8FF; }
+
+.project-thumbnail {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 16px 0;
+}
 
 /* Placeholder for phone mockups */
 .placeholder-phone {
@@ -563,6 +571,30 @@ p {
 
 .case-study-list li {
     margin-bottom: var(--spacing-xs);
+}
+
+/* Stickers layout */
+.sticker-row {
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.sticker-single {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Full-width hero (no aspect ratio constraint) */
+.case-study-hero.full-width {
+    aspect-ratio: unset;
+    max-width: none;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.case-study-hero.full-width .hero-image {
+    max-width: 100%;
+    max-height: none;
 }
 
 .back-link {
