@@ -508,10 +508,17 @@ p {
 .case-study-hero.peach { background-color: var(--color-peach); }
 
 .hero-image {
-    max-width: 100%;
+    max-width: 85%;
     max-height: 100%;
     object-fit: contain;
     padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        max-width: 80%;
+        padding: 24px 24px 0 24px;
+    }
 }
 
 .case-study-image {
