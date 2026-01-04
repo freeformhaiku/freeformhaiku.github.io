@@ -189,6 +189,8 @@ p {
 }
 
 .nav-link {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
+    font-weight: 500;
     color: var(--color-text);
     text-decoration: none;
     font-size: 0.95rem;
@@ -270,6 +272,7 @@ p {
 }
 
 .nav-link-mobile {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--color-text);
@@ -320,6 +323,7 @@ p {
 /* Project card background colors */
 .project-image.pink { background-color: var(--color-pink); }
 .project-image.purple { background-color: var(--color-purple); }
+.project-image.lavender { background-color: #E8E8FF; }
 .project-image.mint { background-color: var(--color-mint); }
 .project-image.peach { background-color: var(--color-peach); }
 .project-image.light-blue { background-color: #D0E8FF; }
@@ -504,6 +508,7 @@ p {
 
 .case-study-hero.pink { background-color: var(--color-pink); }
 .case-study-hero.purple { background-color: var(--color-purple); }
+.case-study-hero.lavender { background-color: #E8E8FF; }
 .case-study-hero.mint { background-color: var(--color-mint); }
 .case-study-hero.peach { background-color: var(--color-peach); }
 
