@@ -324,6 +324,7 @@ p {
 .project-image.pink { background-color: var(--color-pink); }
 .project-image.purple { background-color: var(--color-purple); }
 .project-image.lavender { background-color: #E8E8FF; }
+.project-image.light-cyan { background-color: #DEF7FF; }
 .project-image.mint { background-color: var(--color-mint); }
 .project-image.peach { background-color: var(--color-peach); }
 .project-image.light-blue { background-color: #D0E8FF; }
@@ -334,6 +335,11 @@ p {
     object-fit: contain;
     padding-top: 16px;
     align-self: flex-end;
+}
+
+.project-thumbnail.project-thumbnail-padded {
+    padding: 32px;
+    align-self: center;
 }
 
 /* Placeholder for phone mockups */
@@ -509,6 +515,7 @@ p {
 .case-study-hero.pink { background-color: var(--color-pink); }
 .case-study-hero.purple { background-color: var(--color-purple); }
 .case-study-hero.lavender { background-color: #E8E8FF; }
+.case-study-hero.light-cyan { background-color: #DEF7FF; }
 .case-study-hero.mint { background-color: var(--color-mint); }
 .case-study-hero.peach { background-color: var(--color-peach); }
 
@@ -519,10 +526,18 @@ p {
     padding-top: 40px;
 }
 
+.hero-image.hero-image-padded {
+    padding: 40px;
+}
+
 @media (max-width: 768px) {
     .hero-image {
         max-width: 80%;
         padding: 24px 24px 0 24px;
+    }
+
+    .hero-image.hero-image-padded {
+        padding: 24px;
     }
 }
 
