@@ -537,12 +537,13 @@ p {
 
 @media (max-width: 768px) {
     .hero-image {
-        max-width: 80%;
-        padding: 24px 24px 0 24px;
+        max-width: 100%;
+        padding: 16px 16px 0 16px;
     }
 
     .hero-image.hero-image-padded {
-        padding: 24px;
+        padding: 16px;
+        max-width: 100%;
     }
 
     .hero-image.hero-image-flush-bottom {
@@ -762,6 +763,15 @@ p {
 
     .project-image {
         aspect-ratio: 16 / 10;
+    }
+
+    .project-thumbnail {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .project-thumbnail.project-thumbnail-padded {
+        padding: 16px;
     }
 
     .header {
