@@ -3,64 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ariel Chu</title>
-    <style>
-        @font-face {
-            font-family: 'Name Sans Display';
-            src: url('fonts/AT-NameSansDisplay-Medium.woff2') format('woff2');
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #F5F5FF;
-            font-family: 'Name Sans Display', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .penguin {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 2rem;
-        }
-
-        .message {
-            font-size: 32px;
-            font-weight: 500;
-            color: #0B0068;
-        }
-
-        @media (max-width: 480px) {
-            .penguin {
-                max-width: 150px;
-            }
-
-            .message {
-                font-size: 24px;
-            }
-        }
-    </style>
+    <title>Ariel Chu - Product Designer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <img src="images/infra-pengu.png" alt="Penguin" class="penguin">
-        <p class="message">Work in progress</p>
+<body class="homepage">
+    <header class="header">
+        <a href="/" class="logo">
+            <div class="avatar">
+                <!-- Placeholder for avatar image -->
+            </div>
+            <span class="logo-text">Ariel Chu</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+            <a href="/" class="nav-link">work</a>
+            <a href="/about/" class="nav-link">about</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" aria-label="Open menu">
+            <span class="menu-icon"></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-mobile">
+        <button class="menu-close" aria-label="Close menu">&times;</button>
+        <nav class="nav-mobile-links">
+            <a href="/" class="nav-link-mobile">Work</a>
+            <a href="/about/" class="nav-link-mobile">About</a>
+        </nav>
     </div>
+
+    <main class="main">
+        <section class="projects-grid">
+            <!-- Vault Project -->
+            <a href="/vault/" class="project-card">
+                <div class="project-image pink">
+                    <img src="images/project-thumbnail-vault.png" alt="Vault app" class="project-thumbnail">
+                </div>
+                <h2 class="project-title">Vault</h2>
+                <p class="project-meta">
+                    <span class="tag">Mobile</span>
+                    <span class="project-desc">Locked vaults & multiple vaults</span>
+                </p>
+            </a>
+
+            <!-- Virtual Visa Project -->
+            <a href="/virtual-visa/" class="project-card">
+                <div class="project-image light-cyan">
+                    <img src="images/project-thumbnail-virtual-visa.png" alt="Virtual Visa app" class="project-thumbnail project-thumbnail-padded">
+                </div>
+                <h2 class="project-title">Virtual Visa</h2>
+                <p class="project-meta">
+                    <span class="tag">Mobile</span>
+                    <span class="project-desc">Prepaid debit card & FX estimation</span>
+                </p>
+            </a>
+
+            <!-- Transport Project -->
+            <a href="/transport/" class="project-card">
+                <div class="project-image peach">
+                    <div class="placeholder-phone"></div>
+                </div>
+                <h2 class="project-title">Transport</h2>
+                <p class="project-meta">
+                    <span class="tag">Mobile</span>
+                    <span class="project-desc">E-tickets for buses and trains</span>
+                </p>
+            </a>
+
+            <!-- Trends Project -->
+            <a href="#" class="project-card">
+                <div class="project-image mint">
+                    <div class="placeholder-phone"></div>
+                </div>
+                <h2 class="project-title">Trends</h2>
+                <p class="project-meta">
+                    <span class="tag">Mobile</span>
+                    <span class="project-desc">View weekly and monthly spending</span>
+                </p>
+            </a>
+
+            <!-- Wave Stickers Project -->
+            <a href="/wave-stickers/" class="project-card project-card-wide">
+                <div class="project-image light-blue stickers-image">
+                    <img src="images/project-thumbnail-wave-stickers.png" alt="Wave stickers" class="project-thumbnail">
+                </div>
+                <h2 class="project-title">Wave stickers</h2>
+                <p class="project-meta">
+                    <span class="tag tag-purple">Fun</span>
+                    <span class="tag">Illustration</span>
+                    <span class="project-desc">Penguin stickers...just for fun!</span>
+                </p>
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
