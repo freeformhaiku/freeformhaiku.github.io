@@ -530,6 +530,11 @@ p {
     padding: 40px;
 }
 
+.hero-image.hero-image-flush-bottom {
+    padding: 40px 40px 0 40px;
+    max-width: 95%;
+}
+
 @media (max-width: 768px) {
     .hero-image {
         max-width: 80%;
@@ -539,12 +544,29 @@ p {
     .hero-image.hero-image-padded {
         padding: 24px;
     }
+
+    .hero-image.hero-image-flush-bottom {
+        padding: 24px 24px 0 24px;
+        max-width: 90%;
+    }
 }
 
 .case-study-image {
     max-width: 100%;
     height: auto;
     border-radius: var(--radius-sm);
+}
+
+.case-study-video {
+    max-width: 48%;
+    height: auto;
+    border-radius: var(--radius-sm);
+}
+
+@media (max-width: 768px) {
+    .case-study-video {
+        max-width: 100%;
+    }
 }
 
 /* Case study info rows */
@@ -594,11 +616,69 @@ p {
     margin-right: -75px;
 }
 
+.case-study-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    max-width: 900px;
+    margin-left: -75px;
+    margin-right: -75px;
+    justify-items: center;
+}
+
+.case-study-image-grid .case-study-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.case-study-image-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) auto;
+    max-width: 630px;
+}
+
+.case-study-image-grid-2col .case-study-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.case-study-image.span-2 {
+    grid-column: span 2;
+}
+
+.case-study-image-grid-2col.wide {
+    max-width: 900px;
+    grid-template-columns: 0.7fr 1.3fr;
+}
+
 @media (max-width: 950px) {
     .case-study-image-group {
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .case-study-image-grid {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .case-study-image-grid-2col {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-image-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
