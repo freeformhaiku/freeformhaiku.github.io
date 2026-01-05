@@ -546,8 +546,8 @@ p {
     }
 
     .hero-image.hero-image-flush-bottom {
-        padding: 24px 24px 0 24px;
-        max-width: 90%;
+        padding: 16px 16px 0 16px;
+        max-width: 100%;
     }
 }
 
