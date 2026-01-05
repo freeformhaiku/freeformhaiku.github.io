@@ -718,6 +718,23 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .case-study-image-grid .case-study-image {
+        grid-column: span 1;
+    }
+
+    /* Center last image when there's an odd number of images */
+    .case-study-image-grid .case-study-image:nth-child(odd):last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 50%;
+    }
+
+    /* Reset centering rules on mobile - not needed with 2 columns */
+    .case-study-image-grid .case-study-image:nth-last-child(2):nth-child(4),
+    .case-study-image-grid .case-study-image:nth-last-child(2):nth-child(7) {
+        grid-column: span 1;
+    }
+
     .case-study-image-grid-2col {
         grid-template-columns: repeat(2, 1fr);
     }
