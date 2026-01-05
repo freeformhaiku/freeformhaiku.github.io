@@ -352,12 +352,13 @@ p {
 
 /* Trends thumbnail - larger size and more top padding */
 .trends-thumbnail {
-    transform: scale(1.4);
-    padding-top: 38px !important;
+    transform: scale(1.61);
+    padding-top: 48px !important;
 }
 
 .trends-image {
     overflow: visible;
+    background-color: #DFE1FF !important;
 }
 
 /* Coming Soon Banner */
