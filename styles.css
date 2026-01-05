@@ -350,6 +350,46 @@ p {
     max-height: 90%;
 }
 
+/* Trends thumbnail - larger size and more top padding */
+.trends-thumbnail {
+    transform: scale(1.4);
+    padding-top: 38px !important;
+}
+
+.trends-image {
+    overflow: visible;
+}
+
+/* Coming Soon Banner */
+.coming-soon-banner {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    background-color: #5C5CFE;
+    color: #F2F2FF;
+    padding: 10px 80px;
+    font-family: 'Name Sans Display', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+}
+
+/* Disabled project card (non-clickable) */
+.project-card-disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.project-card-disabled .project-image {
+    position: relative;
+    overflow: hidden;
+}
+
 /* Placeholder for phone mockups */
 .placeholder-phone {
     width: 60%;
