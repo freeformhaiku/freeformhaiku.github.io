@@ -524,6 +524,10 @@ p {
     .case-study-hero {
         align-items: flex-end;
     }
+
+    .case-study-hero.full-width .hero-image {
+        padding: 16px;
+    }
 }
 
 .case-study-hero.pink { background-color: var(--color-pink); }
@@ -855,6 +859,10 @@ p {
 
     .case-study-hero {
         align-items: flex-end;
+    }
+
+    .case-study-hero.full-width .hero-image {
+        padding: 16px;
     }
 
     .hero-image {
