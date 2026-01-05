@@ -290,6 +290,27 @@ p {
     padding: var(--spacing-md) var(--spacing-lg);
 }
 
+/* ===== INTRO SECTION ===== */
+.intro {
+    margin-bottom: var(--spacing-lg);
+}
+
+.intro-header {
+    font-family: 'Name Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.intro-body {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 0;
+}
+
 /* ===== PROJECT GRID ===== */
 .projects-grid {
     display: grid;
@@ -482,11 +503,15 @@ p {
 }
 
 .about-content {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
+    font-weight: 400;
     margin-bottom: var(--spacing-xl);
 }
 
 .contact-section,
 .more-section {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
+    font-weight: 400;
     margin-bottom: var(--spacing-xl);
 }
 
@@ -497,6 +522,8 @@ p {
 }
 
 .about-footer {
+    font-family: 'Name Sans Display', 'Name Sans', sans-serif;
+    font-weight: 400;
     color: var(--color-text-light);
     font-style: italic;
     margin-top: var(--spacing-xl);
