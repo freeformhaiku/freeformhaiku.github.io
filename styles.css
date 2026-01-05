@@ -934,6 +934,15 @@ p {
         font-size: 1.5rem;
     }
 
+    .intro-header {
+        font-size: 1.875rem; /* 30px, reduced from 32px */
+    }
+
+    .intro-body {
+        font-size: 1.125rem; /* 18px, reduced from 20px */
+        line-height: 1.4;
+    }
+
     .logo-text {
         font-size: 22px;
     }
