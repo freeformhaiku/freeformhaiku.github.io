@@ -348,15 +348,10 @@
                 margin-bottom: 0;
             }
 
-            .person-figure img {
-                height: 300px;
-                object-fit: cover;
-            }
-
             .section-highlight {
                 margin-left: calc(-50vw + 50%);
                 margin-right: calc(-50vw + 50%);
-                padding: var(--spacing-xl) calc(50vw - 50% + var(--spacing-lg));
+                padding: var(--spacing-xl) max(var(--spacing-lg), calc((100vw - var(--max-width-desktop)) / 2 + var(--spacing-lg)));
             }
 
             .interested-section {
@@ -389,7 +384,7 @@
             }
 
             .section-highlight {
-                padding: var(--spacing-xl) calc(50vw - 50% + var(--spacing-xl));
+                padding: var(--spacing-xl) max(var(--spacing-xl), calc((100vw - var(--max-width-desktop)) / 2 + var(--spacing-xl)));
             }
         }
     </style>
