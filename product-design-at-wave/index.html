@@ -62,6 +62,7 @@
             color: var(--color-text);
             background-color: var(--color-background);
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
         /* ===== MAIN CONTAINER ===== */
@@ -177,7 +178,6 @@
         }
 
         .image-grid .image-placeholder {
-            aspect-ratio: 1 / 1;
             margin-bottom: 0;
         }
 
@@ -311,7 +311,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: var(--spacing-xl);
-                align-items: start;
+                align-items: center;
             }
 
             .content-layout .section-content {
@@ -320,7 +320,7 @@
 
             .content-layout .section-image {
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
             }
 
             .content-layout .content-image {
@@ -340,6 +340,11 @@
                 gap: var(--spacing-md);
             }
 
+            .image-grid .image-placeholder {
+                aspect-ratio: unset;
+                height: 100%;
+            }
+
             .people-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: var(--spacing-lg);
@@ -351,9 +356,9 @@
             }
 
             .section-highlight {
-                margin-left: calc(-1 * var(--spacing-lg));
-                margin-right: calc(-1 * var(--spacing-lg));
-                padding: var(--spacing-xl) var(--spacing-lg);
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+                padding: var(--spacing-xl) calc(50vw - 50% + var(--spacing-lg));
             }
 
             .interested-section {
@@ -408,9 +413,7 @@
         <p class="intro-text">
             We’re building a design team that sets the standard for simple, thoughtful, and effective products.
         </p>
-        <p>It’s an exciting time to join the growing Product Design team at Wave! Help us solve interesting problems that combine strong product thinking and design skills.
-
-        </p>
+        <p class="intro-text">It's an exciting time to join the growing Product Design team at Wave! Help us solve interesting problems that combine strong product thinking and design skills.</p>
 
         <!-- Hero Placeholder Image -->
         <div class="image-placeholder hero"></div>
