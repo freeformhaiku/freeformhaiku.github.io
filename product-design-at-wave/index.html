@@ -26,8 +26,8 @@
         /* ===== CSS VARIABLES ===== */
         :root {
             --color-background: #FFFFFF;
-            --color-text: #111827;
-            --color-text-secondary: #4B5563;
+            --color-text: #090071;
+            --color-text-secondary: #090071;
             --color-placeholder: #F3F4F6;
             --color-wave-blue: #1C64F2;
             --color-link: #1C64F2;
@@ -69,6 +69,15 @@
             max-width: var(--max-width);
             margin: 0 auto;
             padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        /* ===== TOP HERO IMAGE ===== */
+        .top-hero {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: var(--spacing-lg);
         }
 
         /* ===== HEADER SECTION ===== */
@@ -352,6 +361,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- Top Hero Image -->
+        <img src="/images/testflight-pengu.png" alt="Wave penguin mascot" class="top-hero">
+
         <!-- Header -->
         <header class="page-header">
             <div class="wave-logo">
