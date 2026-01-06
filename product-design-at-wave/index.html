@@ -260,7 +260,31 @@
             margin-left: calc(-1 * var(--spacing-md));
             margin-right: calc(-1 * var(--spacing-md));
             padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        /* ===== PEOPLE FIGURES ===== */
+        .person-figure {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .person-figure:last-child {
+            margin-bottom: 0;
+        }
+
+        .person-figure img {
+            width: 100%;
+            height: auto;
             border-radius: var(--radius-lg);
+            display: block;
+        }
+
+        .person-caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--color-text-secondary);
+            margin-top: var(--spacing-xs);
+            line-height: 1.5;
         }
 
         /* ===== DESKTOP STYLES ===== */
@@ -320,6 +344,10 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: var(--spacing-lg);
                 max-width: 800px;
+            }
+
+            .person-figure {
+                margin-bottom: 0;
             }
 
             .section-highlight {
@@ -436,8 +464,14 @@
             <p>Depending on the project, we create Figma or vibecoded prototypes that have just enough interactive fidelity for User Researchers to test with real customers. Then we iterate based on feedback from customers.
             </p>
             <div class="people-grid">
-                <img src="/images/zach.png" alt="Team member Zach">
-                <img src="/images/diarietou.png" alt="Team member Diarietou">
+                <figure class="person-figure">
+                    <img src="/images/zach.png" alt="Zach Abugov talking to a shopkeeper">
+                    <figcaption class="person-caption">Zach Abugov, Product Manager, in Abidjan May 2024, talking to a shopkeeper</figcaption>
+                </figure>
+                <figure class="person-figure">
+                    <img src="/images/diarietou.png" alt="Diariétou Diop showing a prototype to a taxi driver">
+                    <figcaption class="person-caption">Diariétou Diop, User Researcher, in Dakar November 2025, showing a prototype to a taxi driver</figcaption>
+                </figure>
             </div>
         </section>
 
