@@ -179,7 +179,7 @@
 
         .image-grid .image-placeholder {
             margin-bottom: 0;
-            aspect-ratio: auto;
+            aspect-ratio: 16 / 10;
         }
 
         /* ===== PEOPLE IMAGES ===== */
@@ -387,6 +387,10 @@
             .image-placeholder.hero {
                 aspect-ratio: 21 / 9;
             }
+
+            .section-highlight {
+                padding: var(--spacing-xl) calc(50vw - 50% + var(--spacing-xl));
+            }
         }
     </style>
 </head>
@@ -458,7 +462,8 @@
             <p class="section-text">
                 User Researchers play an essential part of the product process. They help product teams test prototypes, gather context, and gain a better understanding of customer’s habits and expectations.
             </p>
-            <p>Depending on the project, we create Figma or vibecoded prototypes that have just enough interactive fidelity for User Researchers to test with real customers. Then we iterate based on feedback from customers.
+            <p class="section-text">
+                Depending on the project, we create Figma or vibecoded prototypes that have just enough interactive fidelity for User Researchers to test with real customers. Then we iterate based on feedback from customers.
             </p>
             <div class="people-grid">
                 <figure class="person-figure">
